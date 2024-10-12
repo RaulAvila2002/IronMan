@@ -39,7 +39,7 @@ class Sonido {
       mp3_set_serial (mySerial);  //set Serial for DFPlayer-mini mp3 module
       delay(2);  //wait 1ms for mp3 module to set volume
       mp3_set_volume (VOLiNICIAL);
-      //mp3_set_device(SD);
+      
       mp3_stop ();
     }
     

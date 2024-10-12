@@ -1,6 +1,6 @@
 /**
  * @file main.cpp
- * @author your name (you@domain.com)
+ * @author Raul Avila (avilarauleduardo@gmal.com)
  * @brief 
  * @version 0.1
  * @date 2024-09-24
@@ -16,9 +16,9 @@
 #include "Control.h"
 
 //SALIDAS
-#define PECHO     9
-#define OJOS      5
-#define MANOS     6
+#define PECHO 12
+#define OJOS  11
+#define MANOS 10
 
 char num_sec;
 char flag_sec = 0;
@@ -167,6 +167,7 @@ void secuencia (void){
 
 
 void setup(){
+  delay(1000);
   IronMan.Setup();
 }
 
@@ -281,7 +282,7 @@ void translateIR(){
 
     case 0xFF6897:
       Serial.println(" *              ");
-
+      mp3_random_play ();
       break;
 
     case 0xFF9867:
@@ -296,6 +297,7 @@ void translateIR(){
 
     case 0xFFB04F:
       Serial.println(" #            ");
+
       break;
 
     case 0xFF30CF:

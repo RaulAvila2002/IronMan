@@ -41,7 +41,7 @@ class Control
     }
    
     void Update (int estado){
-      // check to see if it's time to change
+
       unsigned long currentMillis = millis();
          
           switch (estado){
