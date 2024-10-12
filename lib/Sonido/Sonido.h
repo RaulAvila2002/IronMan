@@ -12,7 +12,7 @@
 #define HABILITADO      2
 #define DESHABILITANDO  3
 
-#define BUSY_PIN    3
+#define BUSY_PIN    9
 #define VOLiNICIAL  24
 
 SoftwareSerial mySerial(7,8); // RX, TX

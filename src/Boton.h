@@ -8,7 +8,7 @@
 #define ESTADO_HABmAX BTNdESHABNDO+1
 
 //ENTRADAS
-#define BOT_ENC A1
+#define BOT_ENC A2
 
 
 class Boton
